@@ -36,12 +36,3 @@
 
     - name: test result
       debug: msg="FTP daemon was installed and disabled. Test OK"
-
-
-
-
-
-
-
-
-
