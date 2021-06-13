@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include GitHubAction-Molecule-Automation"
+      include_role:
+        name: "GitHubAction-Molecule-Automation"

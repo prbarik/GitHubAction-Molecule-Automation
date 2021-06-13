@@ -1,0 +1,22 @@
+---
+name: CI workflow
+'on':
+  pull_request:
+  push:
+    branches:
+      - dev
+jobs:
+
+  test:
+    name: Molecule
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout the codebase
+        uses: actions/checkout@v2
+
+      - name: Install test dependencies
+        run: echo "Requirement statisfied already"
+
+      - name: Run molecule Test
+        run: molecule test
